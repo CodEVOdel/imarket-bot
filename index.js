@@ -17,11 +17,11 @@ const optional = {
 
 
 bot.on('message',msg=>{
-    if (msg.text=="/start") {
+    if (msg.text=="sw") {
         bot.sendMessage(msg.chat.id,'Привет '+msg.from.first_name);
     }
-    if (msg.text=="/finish") {
-        bot.sendMessage(msg.chat.id,'Пока');
+    if (msg.text=="ph") {
+        bot.sendMessage(msg.chat.id,'Пока'+msg.from.first_name);
     }
     if (msg.text=="/btm") {
         bot.sendMessage(msg.chat.id,'Кнопка',optional);
